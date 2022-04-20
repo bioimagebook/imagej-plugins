@@ -1,0 +1,35 @@
+/*
+ * Main build.gradle
+ */
+
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'java-library'
+}
+
+archivesBaseName = 'bioimage_book_plugins'
+version = '1.0.0'
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit Jupiter for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    // This dependency is used by the application.
+    implementation 'net.imagej:ij:1.53j'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
