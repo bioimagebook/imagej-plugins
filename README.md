@@ -1,6 +1,6 @@
 # Bioimage Book ImageJ Plugins
 
-This repo contains ImageJ plugins written to help develop https://bioimage-book.github.io
+This repo contains ImageJ plugins written to help develop https://bioimagebook.github.io
 
 There are two of them:
 * **Capture window screenshots**
